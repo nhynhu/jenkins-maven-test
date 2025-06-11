@@ -67,7 +67,12 @@ public class GradeConverterTest {
         String expected = "A";
         String actual = converter.convert(95);
         assertEquals(expected,actual);
-
-
+    }
+    @Test
+    public void testConvert9() throws Exception {
+        String expected = "B";
+        String actual = converter.convert(85);
+        assertEquals(expected, actual);
+    }
 
 }
